@@ -1,0 +1,564 @@
+\hypertarget{classpkg_1_1_product_u_i}{}\section{pkg.\+Product\+UI 클래스 참조}
+\label{classpkg_1_1_product_u_i}\index{pkg.\+Product\+UI@{pkg.\+Product\+UI}}
+
+
+상품 정보를 추가/수정 할 때 사용되는 UI 클래스  
+
+
+
+
+pkg.\+Product\+U\+I에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+Product\+U\+I에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1_product_u_i_a1db60509d7b5f175029369d99d4b9cbf}{Product\+UI} ()
+\item 
+\hyperlink{classpkg_1_1_product_u_i_a12c84d785c6de1bb64d3ee8f338f2976}{Product\+UI} (\hyperlink{classpkg_1_1_management_u_i}{Management\+UI} f, char m, int i)
+\item 
+boolean \hyperlink{classpkg_1_1_product_u_i_a643538618cd15aa1607227e9f398554b}{is\+Number} (String num)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1_product_u_i_a48ca25718eac33d3a3cc576863b9ba48}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+J\+Panel \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{label}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{label\+\_\+1}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{label\+\_\+2}
+\item 
+J\+Button \hyperlink{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{Button\+Photo}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{label\+\_\+3}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{label\+\_\+4}
+\item 
+J\+Button \hyperlink{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{btn\+OK}
+\item 
+Button\+Group \hyperlink{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{btn\+Group}
+\item 
+\hyperlink{classpkg_1_1_management_u_i}{Management\+UI} \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{label\+\_\+5}
+\item 
+char \hyperlink{classpkg_1_1_product_u_i_a345f05a195b28c741bb8227ded5873fa}{mode}
+\item 
+int \hyperlink{classpkg_1_1_product_u_i_a1a30802c3dfbd189c88585ed515b78c9}{id}
+\item 
+J\+Label \hyperlink{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{label\+\_\+6}
+\item 
+J\+Text\+Field \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{text\+Field\+Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+상품 정보를 추가/수정 할 때 사용되는 UI 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/05-\/19 
+\end{DoxyDate}
+
+
+Product\+U\+I.\+java 파일의 32 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!Product\+UI@{Product\+UI}}
+\index{Product\+UI@{Product\+UI}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{Product\+U\+I()}{ProductUI()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Product\+U\+I.\+Product\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_product_u_i_a1db60509d7b5f175029369d99d4b9cbf}{}\label{classpkg_1_1_product_u_i_a1db60509d7b5f175029369d99d4b9cbf}
+
+
+Product\+U\+I.\+java 파일의 65 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Product\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+65                        \{
+66         
+67         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame} = null;
+68         
+69         setTitle(\textcolor{stringliteral}{"Add or Modify Product"});
+70         setBounds(200, 200, 500, 500);
+71         setVisible(\textcolor{keyword}{true});
+72         setResizable(\textcolor{keyword}{false});
+73         
+74         \hyperlink{classpkg_1_1_product_u_i_a48ca25718eac33d3a3cc576863b9ba48}{initialize}();
+75         
+76     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!Product\+UI@{Product\+UI}}
+\index{Product\+UI@{Product\+UI}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{Product\+U\+I(\+Management\+U\+I f, char m, int i)}{ProductUI(ManagementUI f, char m, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Product\+U\+I.\+Product\+UI (
+\begin{DoxyParamCaption}
+\item[{{\bf Management\+UI}}]{f, }
+\item[{char}]{m, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_product_u_i_a12c84d785c6de1bb64d3ee8f338f2976}{}\label{classpkg_1_1_product_u_i_a12c84d785c6de1bb64d3ee8f338f2976}
+
+
+Product\+U\+I.\+java 파일의 78 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Product\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+78                                                     \{
+79         
+80         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame} = f;
+81         \hyperlink{classpkg_1_1_product_u_i_a345f05a195b28c741bb8227ded5873fa}{mode} = m;
+82         \textcolor{keywordtype}{id} = i;
+83         
+84         setTitle(\textcolor{stringliteral}{"Add or Modify Product"});
+85         setBounds(200, 200, 500, 500);
+86         setVisible(\textcolor{keyword}{true});
+87         setResizable(\textcolor{keyword}{false});
+88         
+89         \hyperlink{classpkg_1_1_product_u_i_a48ca25718eac33d3a3cc576863b9ba48}{initialize}();
+90     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Product\+U\+I.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a48ca25718eac33d3a3cc576863b9ba48}{}\label{classpkg_1_1_product_u_i_a48ca25718eac33d3a3cc576863b9ba48}
+
+
+Product\+U\+I.\+java 파일의 92 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Management\+U\+I.\+find\+Point\+Loc(), pkg.\+Person.\+get\+Id(), pkg.\+Person.\+get\+Name(), pkg.\+Product.\+ID, pkg.\+Product\+U\+I.\+is\+Number().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Product\+U\+I.\+Product\+U\+I().
+
+
+\begin{DoxyCode}
+92                              \{
+93         
+94         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content} = \textcolor{keyword}{new} JPanel();
+95         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+96         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.setLayout(null);
+97         
+98         setContentPane(\hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content});
+99         
+100         \hyperlink{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{label} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC0C1\(\backslash\)uD488\(\backslash\)uBA85: "});
+101         \hyperlink{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{label}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+102         \hyperlink{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{label}.setBounds(17, 33, 74, 21);
+103         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{label});
+104         
+105         textFieldName = \textcolor{keyword}{new} JTextField();
+106         textFieldName.setBounds(94, 30, 191, 27);
+107         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(textFieldName);
+108         textFieldName.setColumns(10);
+109         
+110         \hyperlink{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{label\_1} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uAC00\(\backslash\)uACA9: "});
+111         \hyperlink{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{label\_1}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+112         \hyperlink{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{label\_1}.setBounds(17, 124, 54, 21);
+113         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{label\_1});
+114         
+115         textFieldPrice = \textcolor{keyword}{new} JTextField();
+116         textFieldPrice.setBounds(75, 121, 210, 27);
+117         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(textFieldPrice);
+118         textFieldPrice.setColumns(10);
+119         
+120         \hyperlink{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{label\_2} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC0AC\(\backslash\)uC9C4: "});
+121         \hyperlink{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{label\_2}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+122         \hyperlink{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{label\_2}.setBounds(17, 166, 54, 21);
+123         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{label\_2});
+124         
+125         textFieldPhoto = \textcolor{keyword}{new} JTextField();
+126         textFieldPhoto.setEditable(\textcolor{keyword}{false});
+127         textFieldPhoto.setBounds(75, 163, 291, 27);
+128         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(textFieldPhoto);
+129         textFieldPhoto.setColumns(10);
+130         
+131         \hyperlink{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{ButtonPhoto} = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"\(\backslash\)uCC3E\(\backslash\)uC544\(\backslash\)uBCF4\(\backslash\)uAE30"});
+132         \hyperlink{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{ButtonPhoto}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+133             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+134                 \textcolor{keywordflow}{if} (\hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.jFileChooser1.showOpenDialog(\hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}) ==
+135                         JFileChooser.APPROVE\_OPTION) \{
+136                     photoFile = \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.jFileChooser1.getSelectedFile();
+137                     textFieldPhoto.setText(photoFile.getPath());
+138                 \}
+139             \}
+140         \});
+141         \hyperlink{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{ButtonPhoto}.setBounds(372, 162, 105, 29);
+142         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{ButtonPhoto});
+143         
+144         \hyperlink{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{label\_3} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC124\(\backslash\)uBA85: "});
+145         \hyperlink{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{label\_3}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+146         \hyperlink{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{label\_3}.setBounds(17, 288, 54, 21);
+147         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{label\_3});
+148         
+149         textAreaInfo = \textcolor{keyword}{new} JTextArea();
+150         textAreaInfo.setBounds(75, 289, 402, 102);
+151         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(textAreaInfo);
+152         
+153         \hyperlink{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{label\_4} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uD0C0\(\backslash\)uC785: "});
+154         \hyperlink{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{label\_4}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+155         \hyperlink{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{label\_4}.setBounds(17, 77, 54, 21);
+156         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{label\_4});
+157         
+158         figureRadioButton = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"\(\backslash\)uD53C\(\backslash\)uADDC\(\backslash\)uC5B4"});
+159         figureRadioButton.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+160         figureRadioButton.setBounds(75, 73, 87, 29);
+161         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(figureRadioButton);
+162         
+163         posterRadioButton = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"\(\backslash\)uD3EC\(\backslash\)uC2A4\(\backslash\)uD130"});
+164         posterRadioButton.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+165         posterRadioButton.setBounds(171, 73, 87, 29);
+166         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(posterRadioButton);
+167         
+168         cardRadioButton = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"\(\backslash\)uCE74\(\backslash\)uB4DC"});
+169         cardRadioButton.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+170         cardRadioButton.setBounds(267, 73, 74, 29);
+171         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(cardRadioButton);
+172         
+173         \hyperlink{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{btnOK} = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"\(\backslash\)uD655\(\backslash\)uC778"});
+174         \hyperlink{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{btnOK}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+175             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+176                 \textcolor{keywordflow}{if}(textFieldName.getText().equals(\textcolor{stringliteral}{""}))
+177                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품명을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+178                             JOptionPane.INFORMATION\_MESSAGE);
+179                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textFieldPrice.getText().equals(\textcolor{stringliteral}{""}))
+180                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품 가격을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+181                             JOptionPane.INFORMATION\_MESSAGE);
+182                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{classpkg_1_1_product_u_i_a643538618cd15aa1607227e9f398554b}{isNumber}(textFieldPrice.getText())
+183                         || Integer.parseInt(textFieldPrice.getText())%10 != 0)
+184                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품 가격: 유효한 값을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+185                             JOptionPane.INFORMATION\_MESSAGE);
+186                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textFieldPhoto.getText().equals(\textcolor{stringliteral}{""}))
+187                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품 사진을 넣어주세요"}, \textcolor{stringliteral}{"Notice"}, 
+188                             JOptionPane.INFORMATION\_MESSAGE);
+189                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textAreaInfo.getText().equals(\textcolor{stringliteral}{""}))
+190                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품에 대한 설명을 입력해주세요"}, \textcolor{stringliteral}{"Notice"}, 
+191                             JOptionPane.INFORMATION\_MESSAGE);
+192                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!figureRadioButton.isSelected()
+193                         && !posterRadioButton.isSelected()
+194                         && !cardRadioButton.isSelected())
+195                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품 타입을 선택해주세요"}, \textcolor{stringliteral}{"Notice"}, 
+196                             JOptionPane.INFORMATION\_MESSAGE);
+197                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(comboBox.getSelectedItem().equals(\textcolor{stringliteral}{""}))
+198                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"판매자를 선택해주세요"}, \textcolor{stringliteral}{"Notice"}, 
+199                             JOptionPane.INFORMATION\_MESSAGE);
+200                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText().equals(\textcolor{stringliteral}{""}))
+201                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"수량을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+202                             JOptionPane.INFORMATION\_MESSAGE);
+203                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{classpkg_1_1_product_u_i_a643538618cd15aa1607227e9f398554b}{isNumber}(\hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText()))
+204                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"수량: 유효한 값을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+205                             JOptionPane.INFORMATION\_MESSAGE);
+206                 \textcolor{keywordflow}{else} \{
+207                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"상품이 정상적으로 등록 되었습니다"}, \textcolor{stringliteral}{"Notice"}, 
+208                             JOptionPane.INFORMATION\_MESSAGE);
+209                     
+210                     photoFile = \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.jFileChooser1.getSelectedFile();
+211                     Image orginalImage = null;
+212                     
+213                     \textcolor{keywordflow}{try} \{
+214                         orginalImage = ImageIO.read(photoFile);
+215                     \} \textcolor{keywordflow}{catch} (IOException e1) \{
+216                         \textcolor{comment}{// TODO Auto-generated catch block}
+217                         e1.printStackTrace();
+218                     \}
+219                     
+220                     Image resizedImage = orginalImage.getScaledInstance(353, 249, Image.SCALE\_SMOOTH);
+221                     
+222                     String str = (String) comboBox.getSelectedItem();
+223                     String strid = str.substring(3, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.\hyperlink{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}{findPointLoc}(str));
+224                     
+225                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1_product_u_i_a345f05a195b28c741bb8227ded5873fa}{mode} == \textcolor{charliteral}{'m'})\{
+226                         \textcolor{keywordflow}{if}(figureRadioButton.isSelected())\{
+227                             \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.set(\textcolor{keywordtype}{id}, \textcolor{keyword}{new} Figure(\textcolor{keywordtype}{id}, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName
+      .getText(),
+228                                     Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+229                                     Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+230                         \}
+231                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(posterRadioButton.isSelected())\{
+232                             \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.set(\textcolor{keywordtype}{id}, \textcolor{keyword}{new} Poster(\textcolor{keywordtype}{id}, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName
+      .getText(),
+233                                     Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+234                                     Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+235                         \}
+236                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cardRadioButton.isSelected())\{
+237                             \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.set(\textcolor{keywordtype}{id}, \textcolor{keyword}{new} Card(\textcolor{keywordtype}{id}, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName.
+      getText(),
+238                                     Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+239                                     Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+240                         \}
+241                         
+242                         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.list.removeAll();
+243                         
+244                         thisClass.dispose();
+245                         \textcolor{keywordflow}{return};
+246                     \}
+247                     
+248                     \textcolor{keywordflow}{if}(figureRadioButton.isSelected())\{
+249                         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.add(\textcolor{keyword}{new} Figure(Product.ID, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName
+      .getText(),
+250                                 Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+251                                 Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+252                     \}
+253                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(posterRadioButton.isSelected())\{
+254                         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.add(\textcolor{keyword}{new} Poster(Product.ID, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName
+      .getText(),
+255                                 Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+256                                 Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+257                     \}
+258                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cardRadioButton.isSelected())\{
+259                         \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.products.add(\textcolor{keyword}{new} Card(Product.ID, \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.proContent, textFieldName.
+      getText(),
+260                                 Integer.parseInt(textFieldPrice.getText()), photoFile, resizedImage, 
+      textAreaInfo.getText(),
+261                                 Integer.parseInt(strid), Integer.parseInt(
+      \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.getText())));
+262                     \}
+263                     Product.ID++;
+264                     \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.list.removeAll();
+265                         
+266                     thisClass.dispose();
+267                 \}
+268             \}
+269         \});
+270         \hyperlink{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{btnOK}.setBounds(187, 406, 125, 29);
+271         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{btnOK});
+272         
+273         \hyperlink{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{btnGroup} = \textcolor{keyword}{new} ButtonGroup();
+274         \hyperlink{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{btnGroup}.add(figureRadioButton);
+275         \hyperlink{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{btnGroup}.add(posterRadioButton);
+276         \hyperlink{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{btnGroup}.add(cardRadioButton);
+277         
+278         \hyperlink{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{label\_5} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uD310\(\backslash\)uB9E4\(\backslash\)uC790: "});
+279         \hyperlink{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{label\_5}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+280         \hyperlink{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{label\_5}.setBounds(17, 206, 74, 21);
+281         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{label\_5});
+282         
+283         comboBox = \textcolor{keyword}{new} JComboBox<String>();
+284         comboBox.setBounds(94, 203, 191, 27);
+285         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(comboBox);
+286         
+287         comboBox.addItem(\textcolor{stringliteral}{""});
+288         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.persons.size(); i++)\{
+289             Person P = \hyperlink{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{frame}.persons.get(i);
+290             
+291             \textcolor{keywordflow}{if}(P instanceof Salesman) comboBox.addItem(\textcolor{stringliteral}{"ID:"} + P.getId() + \textcolor{stringliteral}{", "}+ P.getName());
+292         \}
+293         
+294         \hyperlink{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{label\_6} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC218\(\backslash\)uB7C9: "});
+295         \hyperlink{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{label\_6}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+296         \hyperlink{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{label\_6}.setBounds(17, 249, 54, 21);
+297         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{label\_6});
+298         
+299         \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount} = \textcolor{keyword}{new} JTextField();
+300         \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.setColumns(10);
+301         \hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount}.setBounds(75, 247, 210, 27);
+302         \hyperlink{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{content}.add(\hyperlink{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{textFieldCount});
+303     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!is\+Number@{is\+Number}}
+\index{is\+Number@{is\+Number}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{is\+Number(\+String num)}{isNumber(String num)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean pkg.\+Product\+U\+I.\+is\+Number (
+\begin{DoxyParamCaption}
+\item[{String}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_product_u_i_a643538618cd15aa1607227e9f398554b}{}\label{classpkg_1_1_product_u_i_a643538618cd15aa1607227e9f398554b}
+
+\begin{DoxyParams}{매개변수}
+{\em num} & \+: 숫자로만 구성되어 있는지 검사받을 string형 변수 \\
+\hline
+\end{DoxyParams}
+
+
+Product\+U\+I.\+java 파일의 309 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Product\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+309                                        \{  \textcolor{comment}{// string 값이 숫자인지 아닌지 판단하는 함수}
+310         
+311         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<num.length(); i++)\{
+312             \textcolor{keywordtype}{char} c = num.charAt(i);
+313             
+314             \textcolor{keywordflow}{if}(c != \textcolor{charliteral}{'0'} && c != \textcolor{charliteral}{'1'} && c != \textcolor{charliteral}{'2'} && c != \textcolor{charliteral}{'3'} && c != \textcolor{charliteral}{'4'} && c != \textcolor{charliteral}{'5'} && 
+315                     c != \textcolor{charliteral}{'6'} && c != \textcolor{charliteral}{'7'} && c != \textcolor{charliteral}{'8'} && c != \textcolor{charliteral}{'9'})
+316                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+317         \}
+318         
+319         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+320     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!btn\+Group@{btn\+Group}}
+\index{btn\+Group@{btn\+Group}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{btn\+Group}{btnGroup}}]{\setlength{\rightskip}{0pt plus 5cm}Button\+Group pkg.\+Product\+U\+I.\+btn\+Group\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}{}\label{classpkg_1_1_product_u_i_ab210713d01b5e5e2f116bd0367d95d6f}
+
+
+Product\+U\+I.\+java 파일의 54 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!btn\+OK@{btn\+OK}}
+\index{btn\+OK@{btn\+OK}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{btn\+OK}{btnOK}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button pkg.\+Product\+U\+I.\+btn\+OK\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}{}\label{classpkg_1_1_product_u_i_ae48c36617559f56735461306acc07166}
+
+
+Product\+U\+I.\+java 파일의 52 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!Button\+Photo@{Button\+Photo}}
+\index{Button\+Photo@{Button\+Photo}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{Button\+Photo}{ButtonPhoto}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button pkg.\+Product\+U\+I.\+Button\+Photo\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}{}\label{classpkg_1_1_product_u_i_a8d114c269e1d1294e82573b7e54e4c54}
+
+
+Product\+U\+I.\+java 파일의 45 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!content@{content}}
+\index{content@{content}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{content}{content}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Panel pkg.\+Product\+U\+I.\+content\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}{}\label{classpkg_1_1_product_u_i_a4b906446ebd18ba32a11ace86f26fe12}
+
+
+Product\+U\+I.\+java 파일의 38 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!frame@{frame}}
+\index{frame@{frame}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{frame}{frame}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Management\+UI} pkg.\+Product\+U\+I.\+frame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}{}\label{classpkg_1_1_product_u_i_a49f9ae805cdac34c866e6c1593b6e625}
+
+
+Product\+U\+I.\+java 파일의 56 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!id@{id}}
+\index{id@{id}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+Product\+U\+I.\+id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a1a30802c3dfbd189c88585ed515b78c9}{}\label{classpkg_1_1_product_u_i_a1a30802c3dfbd189c88585ed515b78c9}
+
+
+Product\+U\+I.\+java 파일의 61 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label@{label}}
+\index{label@{label}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label}{label}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}{}\label{classpkg_1_1_product_u_i_a0ef17a87fd778365f5e24e38081a1ea8}
+
+
+Product\+U\+I.\+java 파일의 39 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+1@{label\+\_\+1}}
+\index{label\+\_\+1@{label\+\_\+1}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+1}{label_1}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}{}\label{classpkg_1_1_product_u_i_a77b14da002223a885455d165ca197069}
+
+
+Product\+U\+I.\+java 파일의 41 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+2@{label\+\_\+2}}
+\index{label\+\_\+2@{label\+\_\+2}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+2}{label_2}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}{}\label{classpkg_1_1_product_u_i_aa6f63b0826c3405cf68c4b8e68ca07ed}
+
+
+Product\+U\+I.\+java 파일의 43 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+3@{label\+\_\+3}}
+\index{label\+\_\+3@{label\+\_\+3}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+3}{label_3}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}{}\label{classpkg_1_1_product_u_i_a34869e36c8a05341ad152117c0abd8b5}
+
+
+Product\+U\+I.\+java 파일의 46 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+4@{label\+\_\+4}}
+\index{label\+\_\+4@{label\+\_\+4}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+4}{label_4}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+4\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}{}\label{classpkg_1_1_product_u_i_accc652eee841b5191b1531a9b6eb8c9e}
+
+
+Product\+U\+I.\+java 파일의 48 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+5@{label\+\_\+5}}
+\index{label\+\_\+5@{label\+\_\+5}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+5}{label_5}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+5\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}{}\label{classpkg_1_1_product_u_i_a15bb6a2e073f1c9db2fd7289afd4dd5e}
+
+
+Product\+U\+I.\+java 파일의 57 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!label\+\_\+6@{label\+\_\+6}}
+\index{label\+\_\+6@{label\+\_\+6}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+6}{label_6}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Product\+U\+I.\+label\+\_\+6\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}{}\label{classpkg_1_1_product_u_i_abb15458ba8937c88a1f759023182929b}
+
+
+Product\+U\+I.\+java 파일의 62 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!mode@{mode}}
+\index{mode@{mode}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{mode}{mode}}]{\setlength{\rightskip}{0pt plus 5cm}char pkg.\+Product\+U\+I.\+mode\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_a345f05a195b28c741bb8227ded5873fa}{}\label{classpkg_1_1_product_u_i_a345f05a195b28c741bb8227ded5873fa}
+
+
+Product\+U\+I.\+java 파일의 60 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}!text\+Field\+Count@{text\+Field\+Count}}
+\index{text\+Field\+Count@{text\+Field\+Count}!pkg\+::\+Product\+UI@{pkg\+::\+Product\+UI}}
+\subsubsection[{\texorpdfstring{text\+Field\+Count}{textFieldCount}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Text\+Field pkg.\+Product\+U\+I.\+text\+Field\+Count\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}{}\label{classpkg_1_1_product_u_i_ac35d0e67c152e5bcc6cdf3b9cc79f90b}
+
+
+Product\+U\+I.\+java 파일의 63 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Product\+Management (\+Report\#2)/src/pkg/\hyperlink{_product_u_i_8java}{Product\+U\+I.\+java}\end{DoxyCompactItemize}

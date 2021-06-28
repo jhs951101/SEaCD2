@@ -1,0 +1,13 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.Product",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html",tooltip="상품들을 모아 놓은 추상 클래스 "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pkg.Card",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_card.html",tooltip="Product를 상속 받는 Card 클래스 "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pkg.Figure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_figure.html",tooltip="Product를 상속 받는 Figure 클래스 "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pkg.Poster",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_poster.html",tooltip="Product를 상속 받는 Poster 클래스 "];
+}

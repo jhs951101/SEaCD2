@@ -1,0 +1,232 @@
+\hypertarget{classpkg_1_1_product_panel}{}\section{pkg.\+Product\+Panel 클래스 참조}
+\label{classpkg_1_1_product_panel}\index{pkg.\+Product\+Panel@{pkg.\+Product\+Panel}}
+
+
+상품 정보를 띄울 때 사용되는 J\+Panel  
+
+
+
+
+pkg.\+Product\+Panel에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+Product\+Panel에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1_product_panel_a0eaeeef18948a6774914b322c2b545e5}{Product\+Panel} (\hyperlink{classpkg_1_1_management_u_i}{Management\+UI} f)
+\item 
+void \hyperlink{classpkg_1_1_product_panel_ae1cb96da7cd48c10f53c8c9f8e44d4d3}{set\+Product\+Id} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1_product_panel_a5498108ea7a9cdb3172822e074e2dcb3}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}{Pro\+ID}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+상품 정보를 띄울 때 사용되는 J\+Panel 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/05-\/19 
+\end{DoxyDate}
+
+
+Product\+Panel.\+java 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}!Product\+Panel@{Product\+Panel}}
+\index{Product\+Panel@{Product\+Panel}!pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}}
+\subsubsection[{\texorpdfstring{Product\+Panel(\+Management\+U\+I f)}{ProductPanel(ManagementUI f)}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Product\+Panel.\+Product\+Panel (
+\begin{DoxyParamCaption}
+\item[{{\bf Management\+UI}}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_product_panel_a0eaeeef18948a6774914b322c2b545e5}{}\label{classpkg_1_1_product_panel_a0eaeeef18948a6774914b322c2b545e5}
+
+
+Product\+Panel.\+java 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Product\+Panel.\+initialize().
+
+
+\begin{DoxyCode}
+33                                         \{
+34         frame = f;
+35         
+36         \hyperlink{classpkg_1_1_product_panel_a5498108ea7a9cdb3172822e074e2dcb3}{initialize}();
+37     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Product\+Panel.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_panel_a5498108ea7a9cdb3172822e074e2dcb3}{}\label{classpkg_1_1_product_panel_a5498108ea7a9cdb3172822e074e2dcb3}
+
+
+Product\+Panel.\+java 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Management\+U\+I.\+find\+Point\+Loc(), pkg.\+Product.\+get\+Count(), pkg.\+Person.\+get\+Id(), pkg.\+Person.\+get\+Name(), pkg.\+Product.\+get\+Name(), pkg.\+Product.\+get\+Salesman\+I\+D(), pkg.\+Product.\+set\+Count().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Product\+Panel.\+Product\+Panel().
+
+
+\begin{DoxyCode}
+39                               \{
+40         setLayout(null);
+41         
+42         imageLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+43         imageLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+44         imageLabel.setBounds(17, 15, 353, 249);
+45         add(imageLabel);
+46         
+47         nameLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+48         nameLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+49         nameLabel.setBounds(17, 279, 353, 21);
+50         add(nameLabel);
+51         
+52         typeLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+53         typeLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+54         typeLabel.setBounds(17, 315, 353, 21);
+55         add(typeLabel);
+56         
+57         Pricelabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+58         Pricelabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+59         Pricelabel.setBounds(17, 351, 353, 21);
+60         add(Pricelabel);
+61         
+62         SalesmanLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+63         SalesmanLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+64         SalesmanLabel.setBounds(17, 387, 353, 21);
+65         add(SalesmanLabel);
+66         
+67         Infolabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+68         Infolabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+69         Infolabel.setVerticalAlignment(SwingConstants.TOP);
+70         Infolabel.setBounds(17, 459, 353, 183);
+71         add(Infolabel);
+72         
+73         btnOrder = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"\(\backslash\)uC8FC\(\backslash\)uBB38\(\backslash\)uD558\(\backslash\)uAE30"});
+74         btnOrder.setEnabled(\textcolor{keyword}{false});
+75         btnOrder.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+76             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+77                 frame.list.removeAll();
+78                 
+79                 Product Pro = frame.products.get(\hyperlink{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}{ProID});
+80                 Person Per = frame.persons.get(Pro.getSalesmanID());
+81                 
+82                 \textcolor{keywordflow}{if}(Pro.getCount() <= 0)\{
+83                     JOptionPane.showMessageDialog(frame, \textcolor{stringliteral}{"죄송합니다. 품절된 상품입니다."}, \textcolor{stringliteral}{"Notice"}, 
+84                             JOptionPane.INFORMATION\_MESSAGE);
+85                     \textcolor{keywordflow}{return};
+86                 \}
+87                 
+88                 ArrayList<Object> customers = \textcolor{keyword}{new} ArrayList<Object>();
+89                 
+90                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<frame.persons.size(); i++)\{
+91                     Person P = frame.persons.get(i);
+92                     
+93                     \textcolor{keywordflow}{if}(P instanceof Customer)
+94                         customers.add(\textcolor{stringliteral}{"ID:"} + P.getId() + \textcolor{stringliteral}{", "} + P.getName());
+95                 \}
+96                 
+97                 Object selectedValue = JOptionPane.showInputDialog(null,
+98                         \textcolor{stringliteral}{"고객을 선택해 주세요"}, \textcolor{stringliteral}{"Select"},
+99                         JOptionPane.INFORMATION\_MESSAGE, null,
+100                         customers.toArray(), customers.get(0));
+101                 
+102                 \textcolor{keywordflow}{if}(selectedValue != null)\{
+103                     JOptionPane.showMessageDialog(frame, \textcolor{stringliteral}{"주문이 완료되었습니다"}, \textcolor{stringliteral}{"Notice"}, 
+104                             JOptionPane.INFORMATION\_MESSAGE);
+105                     
+106                     \textcolor{keywordtype}{int} currentCount = Pro.getCount() - 1;
+107                     Pro.setCount(currentCount);
+108                     frame.products.set(\hyperlink{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}{ProID}, Pro);
+109                     
+110                     String strValue = (String) selectedValue;
+111                     
+112                     Per.orders.add(\textcolor{stringliteral}{"CustomerID:"} + strValue.substring(3, frame.
+      \hyperlink{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}{findPointLoc}(strValue)) + \textcolor{stringliteral}{", "} + Pro.getName());
+113                 \}
+114             \}
+115         \});
+116         btnOrder.setBounds(121, 669, 125, 29);
+117         add(btnOrder);
+118         
+119         countLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+120         countLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+121         countLabel.setBounds(17, 423, 353, 21);
+122         add(countLabel);
+123     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\index{pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}!set\+Product\+Id@{set\+Product\+Id}}
+\index{set\+Product\+Id@{set\+Product\+Id}!pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}}
+\subsubsection[{\texorpdfstring{set\+Product\+Id(int i)}{setProductId(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Product\+Panel.\+set\+Product\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_product_panel_ae1cb96da7cd48c10f53c8c9f8e44d4d3}{}\label{classpkg_1_1_product_panel_ae1cb96da7cd48c10f53c8c9f8e44d4d3}
+
+
+Product\+Panel.\+java 파일의 125 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Card.\+show\+Info(), pkg.\+Poster.\+show\+Info(), pkg.\+Figure.\+show\+Info().
+
+
+\begin{DoxyCode}
+125                                    \{
+126         \hyperlink{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}{ProID} = i;
+127     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}!Pro\+ID@{Pro\+ID}}
+\index{Pro\+ID@{Pro\+ID}!pkg\+::\+Product\+Panel@{pkg\+::\+Product\+Panel}}
+\subsubsection[{\texorpdfstring{Pro\+ID}{ProID}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+Product\+Panel.\+Pro\+ID\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}{}\label{classpkg_1_1_product_panel_a24b4946f58b313219ef1521fa2b077f8}
+
+
+Product\+Panel.\+java 파일의 21 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Product\+Management (\+Report\#2)/src/pkg/\hyperlink{_product_panel_8java}{Product\+Panel.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+digraph "pkg.Person"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pkg.Person\n|+ ID\l# id\l# name\l# jumin\l# phonenumner\l# address\l|+ showInfo()\l+ getName()\l+ setName()\l+ getJumin()\l+ setJumin()\l+ getPhonenumner()\l+ setPhonenumner()\l+ getAddress()\l+ setAddress()\l+ getId()\l+ setId()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" #infoPanel" ,arrowhead="odiamond"];
+  Node2 [label="{pkg.AccountPanel\n||+ AccountPanel()\l- initialize()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_account_panel.html",tooltip="Customer 또는 Salesman 계정을 띄울 때 사용되는 JPanel. "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node3 [label="{JPanel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" ~orderlist" ,arrowhead="odiamond"];
+  Node4 [label="{JComboBox\< String \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node2 [color="grey25",fontsize="10",style="solid",label=" ~nameLabel\n~addressLabel\n~juminLabel\n~typeLabel\n~phoneLabel" ,arrowhead="odiamond"];
+  Node5 [label="{JLabel\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~orders" ,arrowhead="odiamond"];
+  Node6 [label="{ArrayList\< Object \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

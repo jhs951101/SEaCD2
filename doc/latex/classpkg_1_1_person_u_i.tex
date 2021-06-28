@@ -1,0 +1,434 @@
+\hypertarget{classpkg_1_1_person_u_i}{}\section{pkg.\+Person\+UI 클래스 참조}
+\label{classpkg_1_1_person_u_i}\index{pkg.\+Person\+UI@{pkg.\+Person\+UI}}
+
+
+계정을 추가/수정 할 때 사용되는 UI 클래스  
+
+
+
+
+pkg.\+Person\+U\+I에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+Person\+U\+I에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1_person_u_i_a0bdc2db82c46abebacf737e4004a2005}{Person\+UI} ()
+\item 
+\hyperlink{classpkg_1_1_person_u_i_a30128b150d6aafc846cbfcac3f1fc40a}{Person\+UI} (\hyperlink{classpkg_1_1_management_u_i}{Management\+UI} f, char m, int i)
+\item 
+boolean \hyperlink{classpkg_1_1_person_u_i_ac378af5584fc8f7bfddb1b05eb0f7289}{is\+Number} (String num)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1_person_u_i_aa1f40468ad943a2162d4a0842238c3b0}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+J\+Panel \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}
+\item 
+J\+Label \hyperlink{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{label}
+\item 
+J\+Label \hyperlink{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{label\+\_\+1}
+\item 
+J\+Label \hyperlink{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{label\+\_\+2}
+\item 
+J\+Label \hyperlink{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{label\+\_\+4}
+\item 
+Button\+Group \hyperlink{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}{btn\+Group}
+\item 
+\hyperlink{classpkg_1_1_management_u_i}{Management\+UI} \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}
+\item 
+J\+Label \hyperlink{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{label\+\_\+3}
+\item 
+J\+Button \hyperlink{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{btn\+OK}
+\item 
+char \hyperlink{classpkg_1_1_person_u_i_a1e904b333d5a5ed5fccbd652278af776}{mode}
+\item 
+int \hyperlink{classpkg_1_1_person_u_i_a0e597f46bc66957eb8b888fab950e712}{id}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+계정을 추가/수정 할 때 사용되는 UI 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/05-\/19 
+\end{DoxyDate}
+
+
+Person\+U\+I.\+java 파일의 25 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!Person\+UI@{Person\+UI}}
+\index{Person\+UI@{Person\+UI}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{Person\+U\+I()}{PersonUI()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Person\+U\+I.\+Person\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_person_u_i_a0bdc2db82c46abebacf737e4004a2005}{}\label{classpkg_1_1_person_u_i_a0bdc2db82c46abebacf737e4004a2005}
+
+
+Person\+U\+I.\+java 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Person\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+50                       \{
+51         
+52         \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame} = null;
+53         
+54         setTitle(\textcolor{stringliteral}{"Add or Modify Person Information"});
+55         setBounds(200, 200, 500, 500);
+56         setVisible(\textcolor{keyword}{true});
+57         setResizable(\textcolor{keyword}{false});
+58         
+59         \hyperlink{classpkg_1_1_person_u_i_aa1f40468ad943a2162d4a0842238c3b0}{initialize}();
+60         
+61     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!Person\+UI@{Person\+UI}}
+\index{Person\+UI@{Person\+UI}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{Person\+U\+I(\+Management\+U\+I f, char m, int i)}{PersonUI(ManagementUI f, char m, int i)}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Person\+U\+I.\+Person\+UI (
+\begin{DoxyParamCaption}
+\item[{{\bf Management\+UI}}]{f, }
+\item[{char}]{m, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_person_u_i_a30128b150d6aafc846cbfcac3f1fc40a}{}\label{classpkg_1_1_person_u_i_a30128b150d6aafc846cbfcac3f1fc40a}
+
+
+Person\+U\+I.\+java 파일의 63 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Person\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+63                                                    \{
+64         
+65         \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame} = f;
+66         \hyperlink{classpkg_1_1_person_u_i_a1e904b333d5a5ed5fccbd652278af776}{mode} = m;
+67         \textcolor{keywordtype}{id} = i;
+68         
+69         setTitle(\textcolor{stringliteral}{"Add or Modify Person Information"});
+70         setBounds(200, 200, 500, 500);
+71         setVisible(\textcolor{keyword}{true});
+72         setResizable(\textcolor{keyword}{false});
+73         
+74         \hyperlink{classpkg_1_1_person_u_i_aa1f40468ad943a2162d4a0842238c3b0}{initialize}();
+75     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Person\+U\+I.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_aa1f40468ad943a2162d4a0842238c3b0}{}\label{classpkg_1_1_person_u_i_aa1f40468ad943a2162d4a0842238c3b0}
+
+
+Person\+U\+I.\+java 파일의 77 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Person.\+ID, pkg.\+Person\+U\+I.\+is\+Number().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Person\+U\+I.\+Person\+U\+I().
+
+
+\begin{DoxyCode}
+77                              \{
+78         
+79         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content} = \textcolor{keyword}{new} JPanel();
+80         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+81         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.setLayout(null);
+82         
+83         setContentPane(\hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content});
+84         
+85         \hyperlink{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{label} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC774\(\backslash\)uB984: "});
+86         \hyperlink{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{label}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+87         \hyperlink{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{label}.setBounds(17, 33, 54, 21);
+88         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{label});
+89         
+90         textFieldName = \textcolor{keyword}{new} JTextField();
+91         textFieldName.setBounds(75, 30, 191, 27);
+92         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(textFieldName);
+93         textFieldName.setColumns(10);
+94         
+95         \hyperlink{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{label\_1} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC8FC\(\backslash\)uBBFC\(\backslash\)uB4F1\(\backslash\)uB85D\(\backslash\)uBC88\(\backslash\)uD638: "});
+96         \hyperlink{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{label\_1}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+97         \hyperlink{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{label\_1}.setBounds(17, 124, 134, 21);
+98         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{label\_1});
+99         
+100         textFieldJumin = \textcolor{keyword}{new} JTextField();
+101         textFieldJumin.setBounds(157, 121, 320, 27);
+102         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(textFieldJumin);
+103         textFieldJumin.setColumns(10);
+104         
+105         \hyperlink{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{label\_2} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uD578\(\backslash\)uB4DC\(\backslash\)uD3F0\(\backslash\)uBC88\(\backslash\)uD638: "});
+106         \hyperlink{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{label\_2}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+107         \hyperlink{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{label\_2}.setBounds(17, 166, 114, 21);
+108         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{label\_2});
+109         
+110         textFieldPhoneNumber = \textcolor{keyword}{new} JTextField();
+111         textFieldPhoneNumber.setBounds(136, 163, 341, 27);
+112         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(textFieldPhoneNumber);
+113         textFieldPhoneNumber.setColumns(10);
+114         
+115         \hyperlink{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{label\_4} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC120\(\backslash\)uD0DD: "});
+116         \hyperlink{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{label\_4}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+117         \hyperlink{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{label\_4}.setBounds(17, 77, 54, 21);
+118         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{label\_4});
+119         
+120         CustomerRadioButton = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"Customer"});
+121         CustomerRadioButton.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+122         CustomerRadioButton.setBounds(75, 73, 111, 29);
+123         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(CustomerRadioButton);
+124         
+125         SalesmanRadioButton = \textcolor{keyword}{new} JRadioButton(\textcolor{stringliteral}{"Salesman"});
+126         SalesmanRadioButton.setBackground(\textcolor{keyword}{new} Color(204, 255, 255));
+127         SalesmanRadioButton.setBounds(194, 73, 111, 29);
+128         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(SalesmanRadioButton);
+129         
+130         \hyperlink{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}{btnGroup} = \textcolor{keyword}{new} ButtonGroup();
+131         \hyperlink{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}{btnGroup}.add(CustomerRadioButton);
+132         \hyperlink{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}{btnGroup}.add(SalesmanRadioButton);
+133         
+134         \hyperlink{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{label\_3} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"\(\backslash\)uC8FC\(\backslash\)uC18C: "});
+135         \hyperlink{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{label\_3}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 20));
+136         \hyperlink{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{label\_3}.setBounds(17, 212, 54, 21);
+137         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{label\_3});
+138         
+139         textFieldAddress = \textcolor{keyword}{new} JTextField();
+140         textFieldAddress.setBounds(74, 209, 403, 27);
+141         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(textFieldAddress);
+142         textFieldAddress.setColumns(10);
+143         
+144         \hyperlink{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{btnOK} = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"\(\backslash\)uD655\(\backslash\)uC778"});
+145         \hyperlink{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{btnOK}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+146             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+147                 \textcolor{keywordflow}{if}(textFieldName.getText().equals(\textcolor{stringliteral}{""}))
+148                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"이름을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+149                             JOptionPane.INFORMATION\_MESSAGE);
+150                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textFieldJumin.getText().equals(\textcolor{stringliteral}{""}))
+151                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"주민등록번호를 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+152                             JOptionPane.INFORMATION\_MESSAGE);
+153                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{classpkg_1_1_person_u_i_ac378af5584fc8f7bfddb1b05eb0f7289}{isNumber}(textFieldJumin.getText()))
+154                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"주민등록번호: 유효한 값을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+155                             JOptionPane.INFORMATION\_MESSAGE);
+156                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textFieldPhoneNumber.getText().equals(\textcolor{stringliteral}{""}))
+157                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"핸드폰 번호를 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+158                             JOptionPane.INFORMATION\_MESSAGE);
+159                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!\hyperlink{classpkg_1_1_person_u_i_ac378af5584fc8f7bfddb1b05eb0f7289}{isNumber}(textFieldPhoneNumber.getText()))
+160                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"핸드폰번호: 유효한 값을 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+161                             JOptionPane.INFORMATION\_MESSAGE);
+162                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(textFieldAddress.getText().equals(\textcolor{stringliteral}{""}))
+163                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"주소를 입력해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+164                             JOptionPane.INFORMATION\_MESSAGE);
+165                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!CustomerRadioButton.isSelected()
+166                         && !SalesmanRadioButton.isSelected())
+167                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"타입을 선택해주세요"}, \textcolor{stringliteral}{"Notice"}, 
+168                             JOptionPane.INFORMATION\_MESSAGE);
+169                 \textcolor{keywordflow}{else} \{
+170                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"계정이 정상적으로 등록 되었습니다"}, \textcolor{stringliteral}{"Notice"}, 
+171                             JOptionPane.INFORMATION\_MESSAGE);
+172                     
+173                     \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1_person_u_i_a1e904b333d5a5ed5fccbd652278af776}{mode} == \textcolor{charliteral}{'m'})\{
+174                         \textcolor{keywordflow}{if}(CustomerRadioButton.isSelected())
+175                             \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.persons.set(\textcolor{keywordtype}{id}, \textcolor{keyword}{new} Customer(\textcolor{keywordtype}{id}, \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.accContent, 
+      textFieldName.getText(),
+176                                     textFieldJumin.getText(), textFieldPhoneNumber.getText(), 
+      textFieldAddress.getText()));
+177                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(SalesmanRadioButton.isSelected())
+178                             \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.persons.set(\textcolor{keywordtype}{id}, \textcolor{keyword}{new} Salesman(\textcolor{keywordtype}{id}, \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.accContent, 
+      textFieldName.getText(),
+179                                     textFieldJumin.getText(), textFieldPhoneNumber.getText(), 
+      textFieldAddress.getText()));
+180                         
+181                         \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.list.removeAll();
+182                         
+183                         thisClass.dispose();
+184                         \textcolor{keywordflow}{return};
+185                     \}
+186                     
+187                     \textcolor{keywordflow}{if}(CustomerRadioButton.isSelected())
+188                         \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.persons.add(\textcolor{keyword}{new} Customer(Person.ID, \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.accContent, textFieldName
+      .getText(),
+189                                 textFieldJumin.getText(), textFieldPhoneNumber.getText(), textFieldAddress.
+      getText()));
+190                     
+191                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(SalesmanRadioButton.isSelected())
+192                         \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.persons.add(\textcolor{keyword}{new} Salesman(Person.ID, \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.accContent, textFieldName
+      .getText(),
+193                                 textFieldJumin.getText(), textFieldPhoneNumber.getText(), textFieldAddress.
+      getText()));
+194                     
+195                     Person.ID++;
+196                     \hyperlink{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{frame}.list.removeAll();
+197                     
+198                     thisClass.dispose();
+199                 \}
+200             \}
+201         \});
+202         \hyperlink{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{btnOK}.setBounds(180, 386, 125, 29);
+203         \hyperlink{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{content}.add(\hyperlink{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{btnOK});
+204     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!is\+Number@{is\+Number}}
+\index{is\+Number@{is\+Number}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{is\+Number(\+String num)}{isNumber(String num)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean pkg.\+Person\+U\+I.\+is\+Number (
+\begin{DoxyParamCaption}
+\item[{String}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_person_u_i_ac378af5584fc8f7bfddb1b05eb0f7289}{}\label{classpkg_1_1_person_u_i_ac378af5584fc8f7bfddb1b05eb0f7289}
+
+\begin{DoxyParams}{매개변수}
+{\em num} & \+: 숫자로만 구성되어 있는지 검사받을 string형 변수 \\
+\hline
+\end{DoxyParams}
+
+
+Person\+U\+I.\+java 파일의 210 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Person\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+210                                        \{  \textcolor{comment}{// string 값이 숫자인지 아닌지 판단하는 함수 ('-' 포함)}
+211         
+212         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<num.length(); i++)\{
+213             \textcolor{keywordtype}{char} c = num.charAt(i);
+214             
+215             \textcolor{keywordflow}{if}(c != \textcolor{charliteral}{'0'} && c != \textcolor{charliteral}{'1'} && c != \textcolor{charliteral}{'2'} && c != \textcolor{charliteral}{'3'} && c != \textcolor{charliteral}{'4'} && c != \textcolor{charliteral}{'5'} && 
+216                     c != \textcolor{charliteral}{'6'} && c != \textcolor{charliteral}{'7'} && c != \textcolor{charliteral}{'8'} && c != \textcolor{charliteral}{'9'} && c != \textcolor{charliteral}{'-'})
+217                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+218         \}
+219         
+220         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+221     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!btn\+Group@{btn\+Group}}
+\index{btn\+Group@{btn\+Group}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{btn\+Group}{btnGroup}}]{\setlength{\rightskip}{0pt plus 5cm}Button\+Group pkg.\+Person\+U\+I.\+btn\+Group\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}{}\label{classpkg_1_1_person_u_i_ab021b25096eb0dec11276a56b226dc42}
+
+
+Person\+U\+I.\+java 파일의 40 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!btn\+OK@{btn\+OK}}
+\index{btn\+OK@{btn\+OK}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{btn\+OK}{btnOK}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Button pkg.\+Person\+U\+I.\+btn\+OK\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}{}\label{classpkg_1_1_person_u_i_ac8976435621b24ee0012f2553d5e168d}
+
+
+Person\+U\+I.\+java 파일의 45 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!content@{content}}
+\index{content@{content}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{content}{content}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Panel pkg.\+Person\+U\+I.\+content\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}{}\label{classpkg_1_1_person_u_i_a05931d9e728132b35d239a5229eea21d}
+
+
+Person\+U\+I.\+java 파일의 29 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!frame@{frame}}
+\index{frame@{frame}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{frame}{frame}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Management\+UI} pkg.\+Person\+U\+I.\+frame\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}{}\label{classpkg_1_1_person_u_i_ab7d796c52a55426d71e77f6496bd4012}
+
+
+Person\+U\+I.\+java 파일의 42 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!id@{id}}
+\index{id@{id}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{id}{id}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+Person\+U\+I.\+id\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a0e597f46bc66957eb8b888fab950e712}{}\label{classpkg_1_1_person_u_i_a0e597f46bc66957eb8b888fab950e712}
+
+
+Person\+U\+I.\+java 파일의 48 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!label@{label}}
+\index{label@{label}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{label}{label}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Person\+U\+I.\+label\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}{}\label{classpkg_1_1_person_u_i_a161533277b04a1a726c08526184d9fad}
+
+
+Person\+U\+I.\+java 파일의 30 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!label\+\_\+1@{label\+\_\+1}}
+\index{label\+\_\+1@{label\+\_\+1}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+1}{label_1}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Person\+U\+I.\+label\+\_\+1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}{}\label{classpkg_1_1_person_u_i_a559152fef6563f4ee1da958263beb299}
+
+
+Person\+U\+I.\+java 파일의 32 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!label\+\_\+2@{label\+\_\+2}}
+\index{label\+\_\+2@{label\+\_\+2}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+2}{label_2}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Person\+U\+I.\+label\+\_\+2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}{}\label{classpkg_1_1_person_u_i_af40d666a6f4a8b9fd70d773377b85d23}
+
+
+Person\+U\+I.\+java 파일의 34 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!label\+\_\+3@{label\+\_\+3}}
+\index{label\+\_\+3@{label\+\_\+3}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+3}{label_3}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Person\+U\+I.\+label\+\_\+3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}{}\label{classpkg_1_1_person_u_i_a6f0d2bbe796a121c3d68046ac8f8e7e3}
+
+
+Person\+U\+I.\+java 파일의 43 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!label\+\_\+4@{label\+\_\+4}}
+\index{label\+\_\+4@{label\+\_\+4}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{label\+\_\+4}{label_4}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Label pkg.\+Person\+U\+I.\+label\+\_\+4\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}{}\label{classpkg_1_1_person_u_i_ace0f99b0457a8e521a18fb1026b7c885}
+
+
+Person\+U\+I.\+java 파일의 36 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}!mode@{mode}}
+\index{mode@{mode}!pkg\+::\+Person\+UI@{pkg\+::\+Person\+UI}}
+\subsubsection[{\texorpdfstring{mode}{mode}}]{\setlength{\rightskip}{0pt plus 5cm}char pkg.\+Person\+U\+I.\+mode\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_person_u_i_a1e904b333d5a5ed5fccbd652278af776}{}\label{classpkg_1_1_person_u_i_a1e904b333d5a5ed5fccbd652278af776}
+
+
+Person\+U\+I.\+java 파일의 47 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Product\+Management (\+Report\#2)/src/pkg/\hyperlink{_person_u_i_8java}{Person\+U\+I.\+java}\end{DoxyCompactItemize}

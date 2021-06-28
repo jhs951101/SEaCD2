@@ -1,0 +1,39 @@
+digraph "pkg.ManagementUI.ManagementUI"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.ManagementUI.ManagementUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pkg.ManagementUI.initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_management_u_i.html#ad90e03e0a06bbf65223654eaaada6805"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pkg.Product.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a33ff6f7a51fc667ad2d2cc670424908c"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pkg.Product.getPrice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#af93b4414ec143311db57e6e4586d129e"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pkg.Product.getPhotoFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a764578798cef5634d2af3044ab922977"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="pkg.Product.getInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a9609730b224bee5730f554067811446f"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="pkg.Product.setId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a996243e4823ae5f76f58e30a03d34eb9"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="pkg.Person.getId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a2da9408fa69eac5cd12efdbdf93b82ed"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pkg.Person.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ab524891b4990ebc4792ee2b8ad7748df"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="pkg.Person.getJumin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#aae5ac75c9dd518c4f88b2bcdb51c11d1"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="pkg.Person.getPhonenumner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ad385ada4f1bfde67bbc9fbe8681277f0"];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="pkg.Person.getAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a590b6e7e8f71c26f427bdbbd4594ffd1"];
+  Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="pkg.Person.setId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ac3efab3a29aa4fabc4163f6d3c633906"];
+  Node2 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="pkg.ManagementUI.findPointLoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_management_u_i.html#a23fb9a0d7bae4106d1f604b6035de259"];
+  Node2 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="pkg.Product.getSalesmanID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a5f82183f3895907190290282addf4b93"];
+  Node2 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="pkg.Product.showInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a7b62e97da9dd4c77dbb0c8bfcac28ed8"];
+  Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="pkg.Person.showInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a567e21bfe61d1d4ad8e5c73256f00e86"];
+}

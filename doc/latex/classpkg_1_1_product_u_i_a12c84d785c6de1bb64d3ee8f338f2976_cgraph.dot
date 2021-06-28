@@ -1,0 +1,17 @@
+digraph "pkg.ProductUI.ProductUI"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.ProductUI.ProductUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="pkg.ProductUI.initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product_u_i.html#a48ca25718eac33d3a3cc576863b9ba48"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="pkg.ProductUI.isNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product_u_i.html#a643538618cd15aa1607227e9f398554b"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="pkg.ManagementUI.findPointLoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_management_u_i.html#a23fb9a0d7bae4106d1f604b6035de259"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="pkg.Person.getId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a2da9408fa69eac5cd12efdbdf93b82ed"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="pkg.Person.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ab524891b4990ebc4792ee2b8ad7748df"];
+}

@@ -1,0 +1,8 @@
+digraph "pkg.Customer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pkg.Customer\n||+ Customer()\l+ Customer()\l+ showInfo()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{pkg.Person\n|+ ID\l~ orders\l# infoPanel\l# id\l# name\l# jumin\l# phonenumner\l# address\l|+ showInfo()\l+ getName()\l+ setName()\l+ getJumin()\l+ setJumin()\l+ getPhonenumner()\l+ setPhonenumner()\l+ getAddress()\l+ setAddress()\l+ getId()\l+ setId()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html",tooltip="계정들을 모아 놓은 추상 클래스 "];
+}

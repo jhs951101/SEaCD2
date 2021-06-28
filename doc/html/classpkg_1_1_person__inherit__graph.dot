@@ -1,0 +1,10 @@
+digraph "pkg.Person"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pkg.Person\n|+ ID\l~ orders\l# infoPanel\l# id\l# name\l# jumin\l# phonenumner\l# address\l|+ showInfo()\l+ getName()\l+ setName()\l+ getJumin()\l+ setJumin()\l+ getPhonenumner()\l+ setPhonenumner()\l+ getAddress()\l+ setAddress()\l+ getId()\l+ setId()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{pkg.Customer\n||+ Customer()\l+ Customer()\l+ showInfo()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_customer.html",tooltip="Person을 상속 받는 Customer 클래스 "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{pkg.Salesman\n||+ Salesman()\l+ Salesman()\l+ showInfo()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_salesman.html",tooltip="Person을 상속 받는 Salesman 클래스 "];
+}

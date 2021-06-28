@@ -1,0 +1,129 @@
+\hypertarget{classpkg_1_1_account_panel}{}\section{pkg.\+Account\+Panel 클래스 참조}
+\label{classpkg_1_1_account_panel}\index{pkg.\+Account\+Panel@{pkg.\+Account\+Panel}}
+
+
+\hyperlink{classpkg_1_1_customer}{Customer} 또는 \hyperlink{classpkg_1_1_salesman}{Salesman} 계정을 띄울 때 사용되는 J\+Panel.  
+
+
+
+
+pkg.\+Account\+Panel에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+Account\+Panel에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1_account_panel_a7b9ef25e1bce2b7b8a6dd734e6dc8f9b}{Account\+Panel} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1_account_panel_a271879f011b6924c7835ce2618050e0b}{initialize} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+\hyperlink{classpkg_1_1_customer}{Customer} 또는 \hyperlink{classpkg_1_1_salesman}{Salesman} 계정을 띄울 때 사용되는 J\+Panel. 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/05-\/19 
+\end{DoxyDate}
+
+
+Account\+Panel.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::\+Account\+Panel@{pkg\+::\+Account\+Panel}!Account\+Panel@{Account\+Panel}}
+\index{Account\+Panel@{Account\+Panel}!pkg\+::\+Account\+Panel@{pkg\+::\+Account\+Panel}}
+\subsubsection[{\texorpdfstring{Account\+Panel()}{AccountPanel()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Account\+Panel.\+Account\+Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_account_panel_a7b9ef25e1bce2b7b8a6dd734e6dc8f9b}{}\label{classpkg_1_1_account_panel_a7b9ef25e1bce2b7b8a6dd734e6dc8f9b}
+
+
+Account\+Panel.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Account\+Panel.\+initialize().
+
+
+\begin{DoxyCode}
+26                           \{
+27         \hyperlink{classpkg_1_1_account_panel_a271879f011b6924c7835ce2618050e0b}{initialize}();
+28     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::\+Account\+Panel@{pkg\+::\+Account\+Panel}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::\+Account\+Panel@{pkg\+::\+Account\+Panel}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Account\+Panel.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_account_panel_a271879f011b6924c7835ce2618050e0b}{}\label{classpkg_1_1_account_panel_a271879f011b6924c7835ce2618050e0b}
+
+
+Account\+Panel.\+java 파일의 30 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Account\+Panel.\+Account\+Panel().
+
+
+\begin{DoxyCode}
+30                               \{
+31         setLayout(null);
+32         
+33         nameLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+34         nameLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+35         nameLabel.setBounds(17, 279, 353, 21);
+36         add(nameLabel);
+37         
+38         typeLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+39         typeLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+40         typeLabel.setBounds(17, 315, 353, 21);
+41         add(typeLabel);
+42         
+43         juminLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+44         juminLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+45         juminLabel.setBounds(17, 351, 353, 21);
+46         add(juminLabel);
+47         
+48         phoneLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+49         phoneLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+50         phoneLabel.setBounds(17, 387, 353, 21);
+51         add(phoneLabel);
+52         
+53         addressLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{""});
+54         addressLabel.setVerticalAlignment(SwingConstants.TOP);
+55         addressLabel.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+56         addressLabel.setBounds(17, 423, 353, 57);
+57         add(addressLabel);
+58         
+59         orderlist = \textcolor{keyword}{new} JComboBox<String>();
+60         orderlist.setBounds(17, 495, 353, 27);
+61         add(orderlist);
+62     \}
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Product\+Management (\+Report\#2)/src/pkg/\hyperlink{_account_panel_8java}{Account\+Panel.\+java}\end{DoxyCompactItemize}

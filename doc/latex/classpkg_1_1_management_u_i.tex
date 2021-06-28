@@ -1,0 +1,626 @@
+\hypertarget{classpkg_1_1_management_u_i}{}\section{pkg.\+Management\+UI 클래스 참조}
+\label{classpkg_1_1_management_u_i}\index{pkg.\+Management\+UI@{pkg.\+Management\+UI}}
+
+
+상품 관리 프로그램 UI 클래스  
+
+
+
+
+pkg.\+Management\+U\+I에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+pkg.\+Management\+U\+I에 대한 협력 다이어그램\+:
+% FIG 1
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpkg_1_1_management_u_i_a1076258b72391ffe3fb851248006efc2}{Management\+UI} ()
+\item 
+int \hyperlink{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}{find\+Point\+Loc} (String str)
+\end{DoxyCompactItemize}
+\subsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classpkg_1_1_management_u_i_a9a837c7468bd2b6c2fdc67672cdc3ac5}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpkg_1_1_management_u_i_ad90e03e0a06bbf65223654eaaada6805}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} = \textquotesingle{}d\textquotesingle{}
+\item 
+J\+Menu\+Bar \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menu\+Bar}
+\item 
+J\+Menu \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mn\+New\+Menu}
+\item 
+J\+Menu \hyperlink{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{mn\+Customer}
+\item 
+J\+Menu \hyperlink{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{mn\+Salesman}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}{product\+Add}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}{product\+Modify}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}{product\+Delete}
+\item 
+J\+Menu \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menu\+Person}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}{person\+Add}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}{product\+Show}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}{customer\+Show}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}{salesman\+Show}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}{person\+Modify}
+\item 
+J\+Menu\+Item \hyperlink{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}{person\+Delete}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+상품 관리 프로그램 UI 클래스 
+
+\begin{DoxyAuthor}{작성자}
+Ji-\/\+Hoon Shim 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2016-\/05-\/19 
+\end{DoxyDate}
+
+
+Management\+U\+I.\+java 파일의 31 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!Management\+UI@{Management\+UI}}
+\index{Management\+UI@{Management\+UI}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{Management\+U\+I()}{ManagementUI()}}]{\setlength{\rightskip}{0pt plus 5cm}pkg.\+Management\+U\+I.\+Management\+UI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_management_u_i_a1076258b72391ffe3fb851248006efc2}{}\label{classpkg_1_1_management_u_i_a1076258b72391ffe3fb851248006efc2}
+
+
+Management\+U\+I.\+java 파일의 75 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Management\+U\+I.\+initialize().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Management\+U\+I.\+main().
+
+
+\begin{DoxyCode}
+75                           \{
+76         
+77         setTitle(\textcolor{stringliteral}{"Product Management Program"});
+78         setBounds(100, 100, 800, 800);
+79         setVisible(\textcolor{keyword}{true});
+80         setResizable(\textcolor{keyword}{false});
+81         
+82         \hyperlink{classpkg_1_1_management_u_i_ad90e03e0a06bbf65223654eaaada6805}{initialize}();
+83     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+
+
+\subsection{멤버 함수 문서화}
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!find\+Point\+Loc@{find\+Point\+Loc}}
+\index{find\+Point\+Loc@{find\+Point\+Loc}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{find\+Point\+Loc(\+String str)}{findPointLoc(String str)}}]{\setlength{\rightskip}{0pt plus 5cm}int pkg.\+Management\+U\+I.\+find\+Point\+Loc (
+\begin{DoxyParamCaption}
+\item[{String}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}{}\label{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}
+
+\begin{DoxyParams}{매개변수}
+{\em str} & \+: \textquotesingle{},\textquotesingle{}가 들어가 있는 문장 \\
+\hline
+\end{DoxyParams}
+
+
+Management\+U\+I.\+java 파일의 385 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Product\+Panel.\+initialize(), pkg.\+Management\+U\+I.\+initialize(), pkg.\+Product\+U\+I.\+initialize().
+
+
+\begin{DoxyCode}
+385                                        \{
+386         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<str.length(); i++)
+387             \textcolor{keywordflow}{if}(str.charAt(i) == \textcolor{charliteral}{','})
+388                 \textcolor{keywordflow}{return} i;
+389         
+390         \textcolor{keywordflow}{return} -1;
+391     \}
+\end{DoxyCode}
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!initialize@{initialize}}
+\index{initialize@{initialize}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{initialize()}{initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void pkg.\+Management\+U\+I.\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_ad90e03e0a06bbf65223654eaaada6805}{}\label{classpkg_1_1_management_u_i_ad90e03e0a06bbf65223654eaaada6805}
+
+
+Management\+U\+I.\+java 파일의 85 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Management\+U\+I.\+find\+Point\+Loc(), pkg.\+Person.\+get\+Address(), pkg.\+Person.\+get\+Id(), pkg.\+Product.\+get\+Info(), pkg.\+Person.\+get\+Jumin(), pkg.\+Person.\+get\+Name(), pkg.\+Product.\+get\+Name(), pkg.\+Person.\+get\+Phonenumner(), pkg.\+Product.\+get\+Photo\+File(), pkg.\+Product.\+get\+Price(), pkg.\+Product.\+get\+Salesman\+I\+D(), pkg.\+Person.\+ID, pkg.\+Product.\+ID, pkg.\+Person.\+set\+Id(), pkg.\+Product.\+set\+Id(), pkg.\+Person.\+show\+Info(), pkg.\+Product.\+show\+Info().
+
+
+
+다음에 의해서 참조됨 \+:  pkg.\+Management\+U\+I.\+Management\+U\+I().
+
+
+\begin{DoxyCode}
+85                              \{
+86         
+87         products = \textcolor{keyword}{new} ArrayList<Product>();
+88         persons = \textcolor{keyword}{new} ArrayList<Person>();
+89         
+90         mainContent = \textcolor{keyword}{new} JPanel();
+91         mainContent.setBackground(\textcolor{keyword}{new} Color(0, 204, 102));
+92         mainContent.setLayout(null);
+93         
+94         setContentPane(mainContent);
+95         
+96         
+97         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar} = \textcolor{keyword}{new} JMenuBar();
+98         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.setBackground(\textcolor{keyword}{new} Color(0, 153, 0));
+99         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.setBounds(0, 0, 794, 31);
+100         mainContent.add(\hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar});
+101         
+102         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Product"});
+103         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu}.setForeground(\textcolor{keyword}{new} Color(255, 255, 255));
+104         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.add(\hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu});
+105         
+106         \hyperlink{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}{productAdd} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Add"});
+107         \hyperlink{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}{productAdd}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+108             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+109                 \textcolor{keywordtype}{boolean} salesman = \textcolor{keyword}{false};
+110                 
+111                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<persons.size(); i++)\{
+112                     Person P = persons.get(i);
+113                     
+114                     \textcolor{keywordflow}{if}(P instanceof Salesman)\{
+115                         salesman = \textcolor{keyword}{true};
+116                         \textcolor{keywordflow}{break};
+117                     \}
+118                 \}
+119                 
+120                 \textcolor{keywordflow}{if}(!salesman)\{
+121                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"판매자를 먼저 등록해 주세요"}, \textcolor{stringliteral}{"Notice"}, 
+122                             JOptionPane.INFORMATION\_MESSAGE);
+123                     \textcolor{keywordflow}{return};
+124                 \}
+125                 
+126                 ProductUI proui = \textcolor{keyword}{new} ProductUI(thisClass, \textcolor{charliteral}{'a'}, -1);
+127                 proui.setVisible(\textcolor{keyword}{true});
+128             \}
+129         \});
+130         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu}.add(\hyperlink{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}{productAdd});
+131         
+132         \hyperlink{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}{productModify} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Modify"});
+133         \hyperlink{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}{productModify}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+134             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+135                 String strid = JOptionPane.showInputDialog(thisClass,
+136                         \textcolor{stringliteral}{"수정할 상품의 id를 입력해 주세요"}, \textcolor{stringliteral}{"0"});
+137                 
+138                 \textcolor{keywordflow}{if}(strid != null)\{
+139                     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = Integer.parseInt(strid);
+140                     
+141                     \textcolor{keywordflow}{if}( !(\textcolor{keywordtype}{id} >= 0 && \textcolor{keywordtype}{id} < products.size()) )\{
+142                         JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"존재하지 않는 id입니다"}, \textcolor{stringliteral}{"Notice"}, 
+143                                 JOptionPane.INFORMATION\_MESSAGE);
+144                         \textcolor{keywordflow}{return};
+145                     \}
+146                     
+147                     Product P = products.get(\textcolor{keywordtype}{id});
+148                     
+149                     ProductUI proui = \textcolor{keyword}{new} ProductUI(thisClass, \textcolor{charliteral}{'m'}, \textcolor{keywordtype}{id});
+150                     proui.textFieldName.setText(P.getName());
+151                     proui.textFieldPrice.setText(String.valueOf(P.getPrice()));
+152                     proui.textFieldPhoto.setText(P.getPhotoFile().getPath());
+153                     proui.textAreaInfo.setText(P.getInfo());
+154                     proui.comboBox.setSelectedItem(\textcolor{stringliteral}{""});
+155                     
+156                     \textcolor{keywordflow}{if}(P instanceof Figure) proui.figureRadioButton.setSelected(\textcolor{keyword}{true});
+157                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(P instanceof Poster) proui.posterRadioButton.setSelected(\textcolor{keyword}{true});
+158                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(P instanceof Card) proui.cardRadioButton.setSelected(\textcolor{keyword}{true});
+159                     
+160                     proui.setVisible(\textcolor{keyword}{true}); 
+161                 \}
+162             \}
+163         \});
+164         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu}.add(\hyperlink{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}{productModify});
+165         
+166         \hyperlink{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}{productDelete} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Delete"});
+167         \hyperlink{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}{productDelete}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+168             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+169                 String strid = JOptionPane.showInputDialog(thisClass,
+170                         \textcolor{stringliteral}{"삭제할 상품의 id를 입력해 주세요"}, \textcolor{stringliteral}{"0"});
+171                 
+172                 \textcolor{keywordflow}{if}(strid != null)\{
+173                     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = Integer.parseInt(strid);
+174                     
+175                     \textcolor{keywordflow}{if}( !(\textcolor{keywordtype}{id} >= 0 && \textcolor{keywordtype}{id} < products.size()) )\{
+176                         JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"존재하지 않는 id입니다"}, \textcolor{stringliteral}{"Notice"}, 
+177                                 JOptionPane.INFORMATION\_MESSAGE);
+178                         \textcolor{keywordflow}{return};
+179                     \}
+180                     
+181                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"정상적으로 삭제 되었습니다"}, \textcolor{stringliteral}{"Notice"}, 
+182                             JOptionPane.INFORMATION\_MESSAGE);
+183                     
+184                     products.remove(\textcolor{keywordtype}{id});
+185                     
+186                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=\textcolor{keywordtype}{id}; i<products.size(); i++)\{
+187                         Product P = products.get(i);
+188                         P.setId(\textcolor{keywordtype}{id});
+189                         products.set(\textcolor{keywordtype}{id}, P);
+190                     \}
+191                     
+192                     Product.ID--;
+193                     list.removeAll();
+194                 \}
+195                 
+196             \}
+197         \});
+198         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu}.add(\hyperlink{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}{productDelete});
+199         
+200         \hyperlink{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}{productShow} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Show"});
+201         \hyperlink{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}{productShow}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+202             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+203                 list.removeAll();
+204                 
+205                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<products.size(); i++)
+206                     list.add(\textcolor{stringliteral}{"ID:"} + products.get(i).getId() + \textcolor{stringliteral}{", "} + products.get(i).getName());
+207                 
+208                 \hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} = \textcolor{charliteral}{'p'};
+209             \}
+210         \});
+211         \hyperlink{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{mnNewMenu}.add(\hyperlink{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}{productShow});
+212         
+213         \hyperlink{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{mnCustomer} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Customer"});
+214         \hyperlink{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{mnCustomer}.setForeground(\textcolor{keyword}{new} Color(255, 255, 255));
+215         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.add(\hyperlink{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{mnCustomer});
+216         
+217         \hyperlink{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}{customerShow} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Show"});
+218         \hyperlink{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}{customerShow}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+219             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+220                 list.removeAll();
+221                 
+222                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<persons.size(); i++)\{
+223                     Person P = persons.get(i);
+224                     
+225                     \textcolor{keywordflow}{if}(P instanceof Customer)
+226                         list.add(\textcolor{stringliteral}{"ID:"} + P.getId() + \textcolor{stringliteral}{", "} + P.getName());
+227                 \}
+228                 \hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} = \textcolor{charliteral}{'c'};
+229             \}
+230         \});
+231         \hyperlink{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{mnCustomer}.add(\hyperlink{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}{customerShow});
+232         
+233         \hyperlink{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{mnSalesman} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Salesman"});
+234         \hyperlink{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{mnSalesman}.setForeground(\textcolor{keyword}{new} Color(255, 255, 255));
+235         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.add(\hyperlink{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{mnSalesman});
+236         
+237         \hyperlink{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}{salesmanShow} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Show"});
+238         \hyperlink{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}{salesmanShow}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+239             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+240                 list.removeAll();
+241                 
+242                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<persons.size(); i++)\{
+243                     Person P = persons.get(i);
+244                     
+245                     \textcolor{keywordflow}{if}(P instanceof Salesman)
+246                         list.add(\textcolor{stringliteral}{"ID:"} + P.getId() + \textcolor{stringliteral}{", "} + P.getName());
+247                 \}
+248                 \hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} = \textcolor{charliteral}{'c'};
+249             \}
+250         \});
+251         \hyperlink{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{mnSalesman}.add(\hyperlink{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}{salesmanShow});
+252         
+253         \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson} = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"Person"});
+254         \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson}.setForeground(Color.WHITE);
+255         \hyperlink{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{menuBar}.add(\hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson});
+256         
+257         \hyperlink{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}{personAdd} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Add"});
+258         \hyperlink{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}{personAdd}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+259             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+260                 PersonUI perui = \textcolor{keyword}{new} PersonUI(thisClass, \textcolor{charliteral}{'a'}, -1);
+261                 perui.setVisible(\textcolor{keyword}{true});
+262             \}
+263         \});
+264         \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson}.add(\hyperlink{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}{personAdd});
+265         
+266         \hyperlink{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}{personModify} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Modify"});
+267         \hyperlink{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}{personModify}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+268             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+269                 String strid = JOptionPane.showInputDialog(thisClass,
+270                         \textcolor{stringliteral}{"수정할 계정의 id를 입력해 주세요"}, \textcolor{stringliteral}{"0"});
+271                 
+272                 \textcolor{keywordflow}{if}(strid != null)\{
+273                     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = Integer.parseInt(strid);
+274                     
+275                     \textcolor{keywordflow}{if}( !(\textcolor{keywordtype}{id} >= 0 && \textcolor{keywordtype}{id} < persons.size()) )\{
+276                         JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"존재하지 않는 id입니다"}, \textcolor{stringliteral}{"Notice"}, 
+277                                 JOptionPane.INFORMATION\_MESSAGE);
+278                         \textcolor{keywordflow}{return};
+279                     \}
+280                     
+281                     Person P = persons.get(\textcolor{keywordtype}{id});
+282                     
+283                     PersonUI perui = \textcolor{keyword}{new} PersonUI(thisClass, \textcolor{charliteral}{'m'}, \textcolor{keywordtype}{id});
+284                     perui.textFieldName.setText(P.getName());
+285                     perui.textFieldJumin.setText(P.getJumin());
+286                     perui.textFieldPhoneNumber.setText(P.getPhonenumner());
+287                     perui.textFieldAddress.setText(P.getAddress());
+288                     
+289                     \textcolor{keywordflow}{if}(P instanceof Customer) perui.CustomerRadioButton.setSelected(\textcolor{keyword}{true});
+290                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(P instanceof Salesman) perui.SalesmanRadioButton.setSelected(\textcolor{keyword}{true});
+291                     
+292                     perui.setVisible(\textcolor{keyword}{true}); 
+293                 \}
+294             \}
+295         \});
+296         \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson}.add(\hyperlink{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}{personModify});
+297         
+298         \hyperlink{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}{personDelete} = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Delete"});
+299         \hyperlink{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}{personDelete}.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+300             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{
+301                 String strid = JOptionPane.showInputDialog(thisClass,
+302                         \textcolor{stringliteral}{"삭제할 계정의 id를 입력해 주세요"}, \textcolor{stringliteral}{"0"});
+303                 
+304                 \textcolor{keywordflow}{if}(strid != null)\{
+305                     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = Integer.parseInt(strid);
+306                     
+307                     \textcolor{keywordflow}{if}( !(\textcolor{keywordtype}{id} >= 0 && \textcolor{keywordtype}{id} < persons.size()) )\{
+308                         JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"존재하지 않는 id입니다"}, \textcolor{stringliteral}{"Notice"}, 
+309                                 JOptionPane.INFORMATION\_MESSAGE);
+310                         \textcolor{keywordflow}{return};
+311                     \}
+312                     
+313                     JOptionPane.showMessageDialog(thisClass, \textcolor{stringliteral}{"정상적으로 삭제 되었습니다"}, \textcolor{stringliteral}{"Notice"}, 
+314                             JOptionPane.INFORMATION\_MESSAGE);
+315                     
+316                     persons.remove(\textcolor{keywordtype}{id});
+317                     
+318                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=\textcolor{keywordtype}{id}; i<persons.size(); i++)\{
+319                         Person P = persons.get(i);
+320                         P.setId(\textcolor{keywordtype}{id});
+321                         persons.set(\textcolor{keywordtype}{id}, P);
+322                     \}
+323                     
+324                     Person.ID--;
+325                     list.removeAll();
+326                 \}
+327                 
+328             \}
+329         \});
+330         \hyperlink{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{menuPerson}.add(\hyperlink{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}{personDelete});
+331         
+332         proContent = \textcolor{keyword}{new} ProductPanel(\textcolor{keyword}{this});
+333         proContent.setBackground(\textcolor{keyword}{new} Color(204, 255, 204));
+334         proContent.setBounds(397, 37, 387, 713);
+335         proContent.setLayout(null);
+336         mainContent.add(proContent);
+337         
+338         accContent = \textcolor{keyword}{new} AccountPanel();
+339         accContent.setBackground(\textcolor{keyword}{new} Color(204, 255, 204));
+340         accContent.setBounds(397, 37, 387, 713);
+341         accContent.setLayout(null);
+342         
+343         list = \textcolor{keyword}{new} List();
+344         list.setMultipleMode(\textcolor{keyword}{false});
+345         list.addItemListener(\textcolor{keyword}{new} ItemListener() \{
+346             \textcolor{keyword}{public} \textcolor{keywordtype}{void} itemStateChanged(ItemEvent arg0) \{
+347                 String strid = list.getSelectedItem().substring(3, \hyperlink{classpkg_1_1_management_u_i_a23fb9a0d7bae4106d1f604b6035de259}{findPointLoc}(list.
+      getSelectedItem()));
+348                 \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = Integer.parseInt(strid);
+349                 
+350                 \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} == \textcolor{charliteral}{'p'})\{
+351                     Product P = products.get(\textcolor{keywordtype}{id});
+352                     String salesmanName = persons.get(P.getSalesmanID()).getName();
+353                     
+354                     accContent.setVisible(\textcolor{keyword}{false});
+355                     mainContent.remove(accContent);
+356                     mainContent.add(proContent);
+357                     proContent.setVisible(\textcolor{keyword}{true});
+358                     
+359                     P.showInfo(\textcolor{keywordtype}{id}, P, salesmanName);
+360                 \}
+361                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{showmode} == \textcolor{charliteral}{'c'})\{
+362                     Person C = persons.get(\textcolor{keywordtype}{id});
+363                     
+364                     proContent.setVisible(\textcolor{keyword}{false});
+365                     mainContent.remove(proContent);
+366                     mainContent.add(accContent);
+367                     accContent.setVisible(\textcolor{keyword}{true});
+368                     
+369                     C.showInfo(C);
+370                 \}
+371             \}
+372         \});
+373         list.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"돋움"}, Font.PLAIN, 18));
+374         list.setBackground(\textcolor{keyword}{new} Color(204, 255, 153));
+375         list.setBounds(10, 37, 381, 713);
+376         mainContent.add(list);
+377         
+378         jFileChooser1 = \textcolor{keyword}{new} JFileChooser();
+379     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!main@{main}}
+\index{main@{main}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{main(\+String[] args)}{main(String[] args)}}]{\setlength{\rightskip}{0pt plus 5cm}static void pkg.\+Management\+U\+I.\+main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classpkg_1_1_management_u_i_a9a837c7468bd2b6c2fdc67672cdc3ac5}{}\label{classpkg_1_1_management_u_i_a9a837c7468bd2b6c2fdc67672cdc3ac5}
+
+
+Management\+U\+I.\+java 파일의 62 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  pkg.\+Management\+U\+I.\+Management\+U\+I().
+
+
+\begin{DoxyCode}
+62                                            \{
+63         EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+64             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+65                 \textcolor{keywordflow}{try} \{
+66                     \hyperlink{classpkg_1_1_management_u_i_a1076258b72391ffe3fb851248006efc2}{ManagementUI} frame = \textcolor{keyword}{new} \hyperlink{classpkg_1_1_management_u_i_a1076258b72391ffe3fb851248006efc2}{ManagementUI}();
+67                     frame.setVisible(\textcolor{keyword}{true});
+68                 \} \textcolor{keywordflow}{catch} (Exception e) \{
+69                     e.printStackTrace();
+70                 \}
+71             \}
+72         \});
+73     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!customer\+Show@{customer\+Show}}
+\index{customer\+Show@{customer\+Show}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{customer\+Show}{customerShow}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+customer\+Show\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}{}\label{classpkg_1_1_management_u_i_ada892716bd590c607273c9a9b5353d03}
+
+
+Management\+U\+I.\+java 파일의 57 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!menu\+Bar@{menu\+Bar}}
+\index{menu\+Bar@{menu\+Bar}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{menu\+Bar}{menuBar}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Bar pkg.\+Management\+U\+I.\+menu\+Bar\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}{}\label{classpkg_1_1_management_u_i_ace9ff91bcebb641b7363e764eae00310}
+
+
+Management\+U\+I.\+java 파일의 47 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!menu\+Person@{menu\+Person}}
+\index{menu\+Person@{menu\+Person}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{menu\+Person}{menuPerson}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+Management\+U\+I.\+menu\+Person\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}{}\label{classpkg_1_1_management_u_i_aac445016414136b78a968311480e8308}
+
+
+Management\+U\+I.\+java 파일의 54 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!mn\+Customer@{mn\+Customer}}
+\index{mn\+Customer@{mn\+Customer}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{mn\+Customer}{mnCustomer}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+Management\+U\+I.\+mn\+Customer\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}{}\label{classpkg_1_1_management_u_i_a0c7fb8ff1b3734316fe7bc49221a5814}
+
+
+Management\+U\+I.\+java 파일의 49 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!mn\+New\+Menu@{mn\+New\+Menu}}
+\index{mn\+New\+Menu@{mn\+New\+Menu}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{mn\+New\+Menu}{mnNewMenu}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+Management\+U\+I.\+mn\+New\+Menu\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}{}\label{classpkg_1_1_management_u_i_a02082701769fb188544b2211ebc5f759}
+
+
+Management\+U\+I.\+java 파일의 48 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!mn\+Salesman@{mn\+Salesman}}
+\index{mn\+Salesman@{mn\+Salesman}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{mn\+Salesman}{mnSalesman}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu pkg.\+Management\+U\+I.\+mn\+Salesman\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}{}\label{classpkg_1_1_management_u_i_a240bf0c46a930b09db9d727ce86c6ec7}
+
+
+Management\+U\+I.\+java 파일의 50 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!person\+Add@{person\+Add}}
+\index{person\+Add@{person\+Add}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{person\+Add}{personAdd}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+person\+Add\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}{}\label{classpkg_1_1_management_u_i_a4781978da9cf1df76dde465ccdadc9f7}
+
+
+Management\+U\+I.\+java 파일의 55 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!person\+Delete@{person\+Delete}}
+\index{person\+Delete@{person\+Delete}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{person\+Delete}{personDelete}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+person\+Delete\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}{}\label{classpkg_1_1_management_u_i_af5e74a22293246fcc049a6e21024e96f}
+
+
+Management\+U\+I.\+java 파일의 60 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!person\+Modify@{person\+Modify}}
+\index{person\+Modify@{person\+Modify}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{person\+Modify}{personModify}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+person\+Modify\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}{}\label{classpkg_1_1_management_u_i_aadf201377400033cf5739556137eca44}
+
+
+Management\+U\+I.\+java 파일의 59 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!product\+Add@{product\+Add}}
+\index{product\+Add@{product\+Add}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{product\+Add}{productAdd}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+product\+Add\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}{}\label{classpkg_1_1_management_u_i_afafd026c860294aea147d42bad8ac11f}
+
+
+Management\+U\+I.\+java 파일의 51 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!product\+Delete@{product\+Delete}}
+\index{product\+Delete@{product\+Delete}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{product\+Delete}{productDelete}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+product\+Delete\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}{}\label{classpkg_1_1_management_u_i_a035f7669304affd98f4304a8639ce4e8}
+
+
+Management\+U\+I.\+java 파일의 53 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!product\+Modify@{product\+Modify}}
+\index{product\+Modify@{product\+Modify}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{product\+Modify}{productModify}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+product\+Modify\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}{}\label{classpkg_1_1_management_u_i_a2384d030e607b71538e1f809991b95be}
+
+
+Management\+U\+I.\+java 파일의 52 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!product\+Show@{product\+Show}}
+\index{product\+Show@{product\+Show}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{product\+Show}{productShow}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+product\+Show\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}{}\label{classpkg_1_1_management_u_i_a46a473eb18422c9f6011fb4d773f65c5}
+
+
+Management\+U\+I.\+java 파일의 56 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!salesman\+Show@{salesman\+Show}}
+\index{salesman\+Show@{salesman\+Show}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{salesman\+Show}{salesmanShow}}]{\setlength{\rightskip}{0pt plus 5cm}J\+Menu\+Item pkg.\+Management\+U\+I.\+salesman\+Show\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}{}\label{classpkg_1_1_management_u_i_ad1d6b0d565e4379362dbb7f4071614a9}
+
+
+Management\+U\+I.\+java 파일의 58 번째 라인에서 정의되었습니다.
+
+\index{pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}!showmode@{showmode}}
+\index{showmode@{showmode}!pkg\+::\+Management\+UI@{pkg\+::\+Management\+UI}}
+\subsubsection[{\texorpdfstring{showmode}{showmode}}]{\setlength{\rightskip}{0pt plus 5cm}char pkg.\+Management\+U\+I.\+showmode = \textquotesingle{}d\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}{}\label{classpkg_1_1_management_u_i_a06db2befb99ab3b189caa39e736e2d0d}
+
+
+Management\+U\+I.\+java 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/workspace(\+J\+A\+V\+A)/\+Product\+Management (\+Report\#2)/src/pkg/\hyperlink{_management_u_i_8java}{Management\+U\+I.\+java}\end{DoxyCompactItemize}

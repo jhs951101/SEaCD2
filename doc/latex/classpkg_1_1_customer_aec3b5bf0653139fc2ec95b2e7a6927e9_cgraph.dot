@@ -1,0 +1,15 @@
+digraph "pkg.Customer.showInfo"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.Customer.showInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="pkg.Person.getAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a590b6e7e8f71c26f427bdbbd4594ffd1"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="pkg.Person.getJumin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#aae5ac75c9dd518c4f88b2bcdb51c11d1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="pkg.Person.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ab524891b4990ebc4792ee2b8ad7748df"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="pkg.Person.getPhonenumner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ad385ada4f1bfde67bbc9fbe8681277f0"];
+}

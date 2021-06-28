@@ -1,0 +1,23 @@
+digraph "pkg.ProductPanel.ProductPanel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pkg.ProductPanel.Product\lPanel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="pkg.ProductPanel.initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product_panel.html#a5498108ea7a9cdb3172822e074e2dcb3"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="pkg.Product.getSalesmanID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a5f82183f3895907190290282addf4b93"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="pkg.Product.getCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#ab7dd82a1b245dba43a64cd232f3665f6"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="pkg.Person.getId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#a2da9408fa69eac5cd12efdbdf93b82ed"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="pkg.Person.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_person.html#ab524891b4990ebc4792ee2b8ad7748df"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="pkg.Product.setCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#acb0a299e85f03854235433410489ab66"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="pkg.ManagementUI.findPointLoc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_management_u_i.html#a23fb9a0d7bae4106d1f604b6035de259"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="pkg.Product.getName",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpkg_1_1_product.html#a33ff6f7a51fc667ad2d2cc670424908c"];
+}
